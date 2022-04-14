@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: playfair-regular;
+    src: url("fonts/PlayfairDisplay-Bold.ttf");
+}
+@font-face{
+    font-family: playfair;
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+@font-face{
+    font-family: lato;
+    src: url("fonts/Lato-Regular.ttf");
+}
+/*header-section*/
+.nav-class{
+    
+    width:100%;
+}
+.bg-image{
+    background-image: url("images/f4a2618aefba4842acf7b331818055ab.png");
+    background-size: cover;
+    
+}
+.bg-navbar{
+    background-color: #363636;
+    width:100%;
+}
+.b-heading{
+    font-family: playfair;
+}
+.content-section h2{
+    padding-top: 150px;
+    max-width: 820px;
+    font-size: 8.0rem;
+    padding-bottom: 220px;
+}
+
+.links-first{
+    font-size:1.5rem;
+}
+.links-second li a {
+    font-size:1.6rem;
+    font-weight:bold;
+}
+li i{
+    font-size: 50px;
+}
+.search-i{
+    font-weight:550;
+    font-size:20px;
+}
+@media (max-width:576px){
+    .content-section h2{
+        font-size:4.0rem;
+        
+    }
+    
+}
+.li1 .a1::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:coral;
+    margin:auto;
+    display:block;
+}
+.li1 .a1:hover::after{
+    width:100%;
+    transition: width 0.3s linear;
+}
+/*establishment-section*/
+.head-2{
+    max-width:447px;
+    font-size:40px;
+    font-family: playfair-regular;
+}
+.para-1{
+    max-width:432px;
+    font-size:18px;
+    font-family: lato;
+}
+.es-section{
+    padding-top:156px;
+}
+
+.img-pos{
+    background-image: url("images/Image 2.png");
+    position:relative;
+}
+a{
+    text-decoration:none;
+}
+.bg-section{
+    margin-top:101px;
+}
+.up-section{
+    max-width:186px;
+    padding-top:50px; 
+    padding-left:30px;
+}
+.date-class{
+    padding-bottom:400px;
+}
+.up-heading{
+    font-size:40px;
+    font-family: lato;
+}
+.anchr-view{
+    font-size:1.8rem;;
+    font-family: lato;
+}
+.venu{
+    font-size:18px;
+}
+.i-heading{
+    font-size:20px;
+}
+.w-para{
+    font-size:20px;
+}
+.arrow-link{
+    font-size:20px;
+}
+.span1{
+    font-size:60px;
+}
+.span2{
+   
+    font-size:20px;
+}
+
+.hand-img{
+    position:absolute;
+    bottom:0;
+    right:50%;
+}
+.white-section{
+    position:absolute;
+    bottom:0;
+    right:0;
+    height:310px;
+    width:349px;
+}
+@media (max-width:575px){
+    .hand-img{
+        height:180px;
+        width:200px;
+        top:30%;
+        right:50%;
+        
+    }
+    .white-section{
+        right:6%;
+        height:280px;
+        width:280px;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .hand-img{
+        height:300px;
+        width:280px;
+        top:30%;
+        right:50%;
+        
+    }
+    .white-section{
+        
+        right:6%;
+        height:280px;
+        width:280px;
+    }
+}
+@media (min-width:767px) and (max-width:1115px){
+    .hand-img{
+        position:absolute;
+        bottom:0;
+        right:50%;
+        width:420px;
+    }
+}
+/*Our service section*/
+.card-size{
+    height:155px;
+    width:156px;
+    transition:1s;
+}
+.card-size:hover{
+    transform:scale(1.1);
+    z-index:2;
+}
+.card-1{
+    background-color: #363636;
+}
+.card-2{
+    background-color: #AF671E;
+}
+.card-3{
+    background-color:#309174;
+}
+.card-4{
+    background-color: #FFFFFF;
+}
+.card-5{
+    background-color: #305291;
+}
+.card-6{
+    background-color: #EADEC0;
+}
+.card-7{
+    height:155px;
+    width:312px;
+}
+.card-8{
+    background-color: #AF671E;
+}
+.card-9{
+    background-color: #DAAB81;
+}
+.card-10{
+    background-color: #005A41;
+}
+.all-para{
+    max-width:80px;
+    font-size:1.6rem;
+    font-family:lato;
+}
+.our-service{
+    font-size:40px;
+    font-family: playfair-regular;
+}
+.person-img{
+    height:310px;
+    width:156px;
+}
+
+
+.for-years{
+    position:relative;
+}
+ @media (max-width:575px){
+    .our-service{
+        font-size:20px;
+        
+    }
+    .card-size{
+        height:120px;
+        width:85px;
+    }
+    .card-7{
+        height:120px;
+        width:85px;
+    }
+    .card-5{
+       
+        width:140px;
+    }
+    .person-img{
+        height:240px;
+        width:140px;
+    }
+    
+} 
+
+.logo-section{
+    position: relative;
+    
+}
+.logo-img{
+    margin-top: 132px;
+    animation: move 2s infinite;
+    position:relative;
+
+}
+@keyframes move{
+    0%{top:0px;}
+    50%{top:20px}
+    1000%{top:0px}
+}
+.logo-year{
+    position: absolute;
+    font-size: 2.9rem;
+    padding-top: 220px;
+    right: 30px;
+    bottom: 250px;
+    color: #DAAB81;
+}
+
+.logo-para{
+    max-width: 398px;
+    font-size: 4.0rem;
+    font-family: playfair-regular;
+}
+/*corousel-section*/
+
+.para-1{
+    font-size: 18px;
+}
+.para-2{
+    font-size: 12px;
+}
+.pre-heading{
+    font-family: playfair-regular;
+    font-size:40px;
+}
+.bg-container{
+    background-color: #000;
+}
+.head-1{
+    max-width: 300px;
+    text-align: center;
+}
+.slider {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    align-items: end;
+}
+.slider-li-container{
+    position: relative;
+    font-size: 30px;
+}
+.slider-images {
+    width: 100%;
+    margin: 10px;
+}
+.anchor{
+    font-size: 18px;
+    color: #484848;
+    text-decoration: none;
+}
+.fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold !important;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+.slick-slider{
+    display: flex !important;
+}
+/*footer*/
+footer{
+    background-color: #363636;
+    color: #ffffff;
+    background-image: url('images/footer.png');
+    background-size: cover;
+   
+    opacity: 100%;
+    
+}
+
+footer h3{
+    max-width: 240px;
+    font-size: 1.8rem;
+}
+
+footer li a{
+    font-size: 1.5rem;
+}
+
+address{
+    font-size: 1.5rem;
+    max-width: 261px;
+}
+ul li {
+    list-style-type:none;
+}
+ul li a{
+    color:white;
+}
+a {
+    color:white;
+}
+.copyright{
+    max-width: 248px;
+    font-size: 1.5rem;
+}
+.footer-icons{
+    font-size: 2.0rem;
+}
+.all-icons{
+    max-width: 300px;
+}
+.all-icons .footer-icons:hover{
+    transform:translate(0,-10px);
+    color:orange;
+    transition-duration:0.5s;
+
+}
+ul li a:hover{
+    color:orange;
+    transition-duration:0.5s;
+}
+address span:hover{
+    color:orange;
+    transition-duration:0.5s;
+}
+div .copyright:hover{
+    color:orange;
+    transition-duration:0.5s;
+}
